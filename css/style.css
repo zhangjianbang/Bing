@@ -1,0 +1,208 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #333;
+}
+.bg_div{
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	background-image: url(../img/bg_1.jpg);
+	background-size: 100% 100%;
+	z-index: -1;
+	box-shadow: 0 0 10px;
+}
+.sosuo{
+	z-index: 999;
+	position: relative;
+	top: 150px;
+	left: 120px;
+	width: 800px;
+}
+.logo_div{
+	background-image: url(../img/hp_zh_cn.png);
+	width: 120px;
+	height: 60px;
+	background-repeat: no-repeat;
+	float: left;
+}
+form{
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+	top: 7px;
+	padding: 0px;
+}
+form input,button{
+	border:0px;
+}
+form input{
+	width: 400px;
+	height: 30px;
+	margin-left: 5px;
+	font-size: 15px;
+}
+form input:focus{
+	outline: none;
+}
+form button{
+	background-color: cornflowerblue;
+	margin: 0px;
+	width: 50px;
+	height: 45px;
+}
+form button:hover{
+	transition: 0.5s;
+	cursor: pointer;
+	background-color: #4682B4;
+}
+i{
+	color: white;
+}
+/*右下角选择按钮*/
+.check{
+	width: 250px;
+	height: 50px;
+	position: fixed;
+	bottom: 45px;
+	right: 20px;
+	text-align: center;
+
+}
+.check .fa-arrow-circle-left,.fa-arrow-circle-right{
+	width: 75px;
+}
+.check i:hover{
+	transition: 0.5s;
+	cursor: pointer;
+	color:#333; 
+}
+#i_id1{
+	float: left;
+	width: 50px;
+}
+i:nth-child(2),i:nth-child(3){
+	opacity: 0;
+}
+.fa-wechat,.fa-github{
+	position: fixed;
+	bottom: 54px;
+	z-index: -1;
+	right: 230px;
+}
+.ico i{
+	margin-right: 20px;
+}
+.check .fa-github:hover{
+	color: blue;
+}
+.check .fa-wechat:hover{
+	color: green;
+}
+/*footer*/
+.footer{
+	width:300px;
+	height: 30px; 
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	line-height: 40px;
+}
+/*二维码信息*/
+img{
+	position: absolute;
+	width: 100px;
+	left: -35px;
+	top:-150px;
+	border:2px solid white;
+	padding:4px;
+	opacity: 0;
+	transition: 1s;
+}
+i:nth-child(2):hover img{
+	transition: 1s;
+	opacity: 1;
+}
+
+/*侧栏菜单*/
+.daohang{
+	width: 0;
+	height: 100%;
+	background-color: #333;
+	overflow: hidden;
+	transition: 0.6s;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	z-index: 1;
+	padding-top: 60px;
+	white-space: nowrap;
+	z-index: 99999;
+	box-shadow: 0px 0px 10px;
+}
+.daohang a{
+	padding: 10px 10px 30px 10px;
+	text-decoration: none;
+	color: #818181;
+	display: block;
+	font-size: 20px;
+	transition: 0.5s;
+}
+a:hover{
+	color: white;
+}
+#open_id{
+	cursor: pointer; 
+	font-size: 25px;
+	transition: 0.6s;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: white;
+}
+#open_id:hover{
+	color: #818181;
+}
+.close span{
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	font-size: 25px;
+}
+/*音乐播放*/
+#ico{
+	position: fixed;
+	top: 20px;
+	right: 40px;
+}
+#ico:hover{
+	cursor: pointer;
+	color: #ccc;
+	transition: 0.5s;
+}
+@keyframes music_dh{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+#left_music{
+	position: fixed;
+	top: 20px;
+	right: 25px;
+}
+#left_music:hover{
+	cursor: pointer;
+	color: #ccc;
+	transition: 0.5s;
+}
+#right_music:hover{
+	cursor: pointer;
+	color: #ccc;
+	transition: 0.5s;
+}
+#right_music{
+	position: fixed;
+	top: 20px;
+	right: 10px;
+}
